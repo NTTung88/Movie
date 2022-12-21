@@ -1,0 +1,129 @@
+.wrapper {
+    // position: relative;
+
+    height: 2000px;
+    // background-color: aqua;
+    display: content;
+}
+
+.section1 {
+    position: relative;
+    width: 988px;
+    height: 198px;
+    left: 237px;
+    top: 67px;
+    // background: rgba(217, 217, 217, 0.1);
+    mix-blend-mode: normal;
+
+    border: 5px solid red;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+}
+.Content {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 8px;
+    margin-bottom: 16px;
+
+    color: #e1e1e1;
+}
+.titleContent {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 24px;
+    /* identical to box height */
+
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #f33f3f;
+}
+
+.section2 {
+    position: relative;
+    width: 355px;
+    height: 38px;
+    left: 67px;
+    top: 100px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+
+    color: #e1e1e1;
+}
+
+.section3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    width: 1300px;
+    height: auto;
+    top: 130px;
+    left: 80px;
+
+    background-color: bisque;
+}
+
+.poster {
+    position: relative;
+    width: 196px;
+    height: 341px;
+    left: 24px;
+    top: 24px;
+
+    background: #1f1f1f;
+    border-radius: 4px;
+    margin: 8px;
+}
+
+.bgItem {
+    width: 196px;
+    height: 241px;
+    left: 375px;
+    top: 372px;
+}
+.percent {
+    position: absolute;
+    width: 90.32px;
+    height: 19.06px;
+    left: 100.68px;
+    top: 230.68px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #e1e1e1;
+}
+.namePoster {
+    position: absolute;
+    left: 6.67%;
+    right: 6.67%;
+    top: 74.71%;
+    bottom: 14.15%;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #e1e1e1;
+}

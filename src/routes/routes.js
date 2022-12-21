@@ -1,6 +1,7 @@
 import config from '~/config';
 
 import Home from '~/pages/Home';
+
 import History from '~/pages/History';
 
 const publicRoutes = [

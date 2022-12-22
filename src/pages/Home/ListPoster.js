@@ -2,6 +2,7 @@
 import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import style from './Home.module.scss';
+// import config from '~/config';
 
 const cx = classNames.bind(style);
 function ListPoster({ data }) {
@@ -16,10 +17,10 @@ function ListPoster({ data }) {
         list.forEach((item, index) => {
             listShow.push(
                 <div key={index}>
-                    <div className={cx('poster')}>
+                    <div id={item.id} className={cx('poster')}>
                         <img className={cx('bgItem')} src={getImage(item.image)} alt={item.name} />
 
-                        <p className={cx('percent')}> {item.id}</p>
+                        <p className={cx('percent')}> {getRating(item.rating)}</p>
                         <p className={cx('namePoster')}>{item.name}</p>
                     </div>
                 </div>,
@@ -32,16 +33,29 @@ function ListPoster({ data }) {
     const getImage = (arr = []) => {
         if (arr === undefined) {
             return undefined;
-        } // return undefined for undefined
+        }
         if (arr === null) {
             return null;
-        } // null unchanged
-        console.log(arr.medium);
+        }
 
         return arr.medium;
     };
 
-    return <div className={cx('section3')}>{getElement()}</div>;
+    const getRating = (arr = []) => {
+        if (arr === undefined) {
+            return undefined;
+        }
+        if (arr.average === null) {
+            return 'NaN';
+        }
+        return arr.average;
+    };
+
+    return (
+        <div className={cx('section3')}>
+            <div className={cx('grilPoster')}>{getElement()}</div>
+        </div>
+    );
 }
 
 ListPoster.prototypes = {

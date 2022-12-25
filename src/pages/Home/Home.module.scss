@@ -1,5 +1,5 @@
 .wrapper {
-    height: 2000px;
+    height: auto;
     width: 1600px;
     display: content;
     background-color: #404040;
@@ -68,8 +68,8 @@
     height: auto;
     top: 130px;
     left: 80px;
-    border: #f33f3f solid 1px;
-    padding-bottom: 40px;
+    background-color: #1f1f1f;
+    padding-bottom: 240px;
 }
 .grilPoster {
     display: grid;
@@ -83,9 +83,13 @@
     left: 24px;
     top: 24px;
 
-    background: #1f1f1f;
-    border-radius: 4px;
     margin: 8px;
+}
+.posterContent {
+    width: 196px;
+    height: 341px;
+    border-radius: 4px;
+    background: #404040;
 }
 
 .bgItem {

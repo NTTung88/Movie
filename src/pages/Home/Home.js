@@ -12,7 +12,7 @@ const cx = classNames.bind(style);
 function Home() {
     const [movie, setMovie] = useState([]);
     useEffect(() => {
-        fetch('http://api.tvmaze.com/search/shows?q=simpsons')
+        fetch('https://api.tvmaze.com/show')
             .then((res) => res.json())
             .then((movie) => {
                 setMovie(movie);

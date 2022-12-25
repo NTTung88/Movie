@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 
 import images from '~/assets/images';
 import Images from '~/components/Images';
+import Search from '../Search';
+
 const cx = classNames.bind(style);
 function Header() {
     return (
@@ -18,8 +20,7 @@ function Header() {
                 <Images className={cx('icHome')} src={images.icHome} alt="home" />
             </Link>
 
-            <input className={cx('search')} />
-
+            <Search />
             <div className={cx('icGroup')}>
                 <Link to={config.routes.movie}>
                     <Images className={cx('icMovie')} src={images.icMovie} alt="movie" />

@@ -2,26 +2,26 @@
 import classNames from 'classnames/bind';
 import PropTypes from 'prop-types';
 import style from './Home.module.scss';
-// import config from '~/config';
+import { Link } from 'react-router-dom';
+import config from '~/config';
 
 const cx = classNames.bind(style);
 function ListPoster({ data }) {
-    const list = [];
-    data.map((m) => {
-        list.push(m.show);
-    });
-
     const listShow = [];
 
     const getElement = () => {
-        list.forEach((item, index) => {
+        data.forEach((item, index) => {
             listShow.push(
                 <div key={index}>
-                    <div id={item.id} className={cx('poster')}>
-                        <img className={cx('bgItem')} src={getImage(item.image)} alt={item.name} />
+                    <div className={cx('poster')}>
+                        <Link to={`${config.routes.detailMovie}/${item.id}`} id={item.id} className={cx('Nav')}>
+                            <div className={cx('posterContent')}>
+                                <img className={cx('bgItem')} src={getImage(item.image)} alt={item.name} />
 
-                        <p className={cx('percent')}> {getRating(item.rating)}</p>
-                        <p className={cx('namePoster')}>{item.name}</p>
+                                <p className={cx('percent')}> {getRating(item.rating)}</p>
+                                <p className={cx('namePoster')}>{item.name}</p>
+                            </div>
+                        </Link>
                     </div>
                 </div>,
             );

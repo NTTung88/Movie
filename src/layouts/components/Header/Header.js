@@ -11,14 +11,10 @@ const cx = classNames.bind(style);
 function Header() {
     return (
         <div className={cx('wrapper')}>
-            {/* <Link to={config.routes.home}>
-                <Images className={cx('logo')} src={images.logo} alt="logo" />
-            </Link> */}
-
-            <p className={cx('title')}>Movies</p>
             <Link to={config.routes.home}>
-                <Images className={cx('icHome')} src={images.icHome} alt="home" />
+                <Images className={cx('logo')} src={images.logo} alt="logo" />
             </Link>
+            <p className={cx('title')}>Movies</p>
 
             <Search />
             <div className={cx('icGroup')}>

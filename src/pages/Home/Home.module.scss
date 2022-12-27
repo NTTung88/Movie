@@ -109,6 +109,8 @@
     align-items: center;
     text-align: center;
 
+    justify-content: center;
+    
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -119,7 +121,7 @@
     color: #e1e1e1;
     background-color: #f33f3f;
 
-    border-radius: 2px;
+    border-radius: 8px;
     padding-left: 2px;
 }
 .namePoster {
@@ -131,9 +133,10 @@
 
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 900;
+    font-size: 19px;
     line-height: 19px;
+    text-align: center;
 
-    color: #e1e1e1;
+    color: #cc8d4c;
 }

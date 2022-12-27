@@ -11,15 +11,16 @@
 
     max-width: 100%;
     width: 1600px;
-    height: 100px;
+    height: 70px;
 
     // box-shadow: 0px 1px 1px rgb(0 0 0 /12%);
-    background: #4b4141;
+    // #4b4141;
+    background: rgb(32, 30, 30);
 }
 
 .logo {
-    width: 172px;
-    height: 72px;
+    width: 32px;
+    height: 32px;
 
     background: #070707;
     mix-blend-mode: normal;
@@ -47,7 +48,7 @@
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     flex: none;
-    order: 1;
+    order: 0;
     flex-grow: 0;
 }
 
@@ -56,7 +57,7 @@
     height: 40px;
 
     flex: none;
-    order: 2;
+    order: 3;
     flex-grow: 0;
 
     &:hover {
@@ -70,6 +71,7 @@
     width: 408px;
     height: 88px;
 
+    left: 170px;
     background-color: transparent;
 
     flex: none;
@@ -79,10 +81,10 @@
 
 .icMovie {
     position: absolute;
-    width: 42.68px;
-    height: 46.32px;
+    width: 32px;
+    height: 32px;
     left: 43.91px;
-    top: 19.68px;
+    top: 28px;
     &:hover {
         background-color: rgb(208, 173, 213);
         border-radius: 8px;
@@ -91,9 +93,9 @@
 
 .icHistory {
     position: absolute;
-    width: 61.64px;
-    height: 34.74px;
-    left: 104.99px;
+    width: 32px;
+    height: 32px;
+    left: 120.99px;
     top: 28px;
     &:hover {
         background-color: rgb(208, 173, 213);
@@ -103,8 +105,8 @@
 
 .icYears {
     position: absolute;
-    width: 61.64px;
-    height: 34.74px;
+    width: 32px;
+    height: 32px;
     left: 190.07px;
     top: 28px;
     &:hover {
@@ -115,8 +117,8 @@
 
 .icCountry {
     position: absolute;
-    width: 59.1px;
-    height: 34.74px;
+    width: 32px;
+    height: 32px;
     left: 265.99px;
     top: 28px;
     &:hover {
@@ -127,10 +129,10 @@
 
 .account {
     position: relative;
-    width: 72px;
-    height: 72px;
+    width: 32px;
+    height: 32px;
 
-    left: -70px;
+    left: 80px;
     flex: none;
     order: 5;
     flex-grow: 0;

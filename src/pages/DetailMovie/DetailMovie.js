@@ -1,22 +1,25 @@
 import classNames from 'classnames/bind';
 import style from './DetailMovie.module.scss';
+import { useParams } from 'react-router-dom';
+
 // import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
 
 const cx = classNames.bind(style);
 
 function DetailMovie() {
-    // const query = new URLSearchParams(window.location.search);
-    // const q = query.get('q');
-    // console.log(q);
     const [movie, setMovie] = useState(null);
+
+    const param = useParams();
+
+    const idUrl = param.id;
     useEffect(() => {
-        fetch(`https://api.tvmaze.com/shows/3`)
+        fetch(`https://api.tvmaze.com/shows/${idUrl}`, { method: 'GET' })
             .then((res) => res.json())
             .then((movie) => {
                 setMovie(movie);
             });
-    }, []);
+    }, [idUrl]);
 
     return (
         <div className={cx('bodyDetail')}>

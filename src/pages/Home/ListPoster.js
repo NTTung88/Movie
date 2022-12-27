@@ -11,10 +11,11 @@ function ListPoster({ data }) {
 
     const getElement = () => {
         data.forEach((item, index) => {
+            console.log(config.routes.detailMovie, '/', item.id);
             listShow.push(
                 <div key={index}>
                     <div className={cx('poster')}>
-                        <Link to={`${config.routes.detailMovie}/${item.id}`} id={item.id} className={cx('Nav')}>
+                        <Link to={`${config.routes.details}/${item.id}`} className={cx('Nav')}>
                             <div className={cx('posterContent')}>
                                 <img className={cx('bgItem')} src={getImage(item.image)} alt={item.name} />
 
